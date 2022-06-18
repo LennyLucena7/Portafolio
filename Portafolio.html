@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi portafolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="portafolio.css">
+  <title>Portafolio</title>
 </head>
 <body>
-    <h1> Lenny Marians Lucena Torres </h1>
-</body>
-<div class="wrapper">
+  <main>
+    <!-- HEADER -->
     <header>
-        <nav class="navbar">
-            <div class="branch">
-                <h2>Estudante de Programação Full Stack</h2>
-            </div>
-            <ul>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Objetivos</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-
+      <div class="logo">
+        PORTAFOLIO
+      </div>
+      <div class="menu">
+        <nav class="nav-list">
+            <a href="#home">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
         </nav>
-    </header>
-</div>
-</html>
+      </div>
+    </header>  
+    
+    <!-- HOME -->
+    <section id="home">
+      <div class="home-info">
+        <h2>Olá, sou Lenny Lucena</h2>
+        <span class="home-position">Estudante de Programação FullStack</span>
+        <span class="home-resume">
+          Sou venezuelana, tenho 33 anos, moro en Londrina-PR-BR, sou formada em Logística,
+  actualmete estudando Programação Full Stark com a Toti. 
+        </span>
+        <button>
+          <a href="#contact">Contate-me</a>
+        </button>
+      </div>
+      <div class="home-img">
+        <img src="logo.jpg" alt="Foto de perfil">
+      </div>
+      <div class="redes">
+        <div class="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="img_inst" src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" 
+                alt="instagram" width="40" height="40"> 
+            </a>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324053%7Ce%7Cfacebook%7C&placement=&creative=320269324053&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001637%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw77WVBhBuEiwAJ-YoJM8iG8zXeVR2d2bchSzWbU-KKjFVyPM9H_a0jj0frv9gDc4C8H7e2BoCJSwQAvD_BwE" target="_blank">                                 
+                <img class="img_face" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" 
+                alt="facebook" width="40" height="40">
+            </a>    
+        </div>
+    </section>
+    
+    <!-- PROJECTS -->
+
+     <section id="projeto">
+      <h2>Projetos</h2>
+      <div class="card">
+          <a href="#">
+        <img src="practicando.jpg" class="card-img" alt="foto de meu projeto">
+        <div class="card-infor">
+          <span class="cerd_badge">Criando meu perfil com html, falando um pouco sobre mim</span>
+         </div>
+         </a>
+         <button>
+          <a href="https://github.com/LennyLucena7/Practicando" target="_blank">Clik aqui</a>
+         </button>
+        </div>
+     </section>
+      
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Digite seu nome" />
+      <input type="email" placeholder="Digite seu e-mail" />
+      <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+  <footer>
+    copyright © 2022 Lenny Lucena
+  </footer>
+  </main>  
+  </div>
+</body>
+</html>   
