@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi portafolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portafolio.css">
+  <title>Portafolio</title>
 </head>
 <body>
-    <h1> Lenny Lucena </h1>
+  <main>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        PORTAFOLIO
+      </div>
+      <div class="menu">
+        <nav class="nav-list">
+            <a href="#home">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>  
+    
+    <!-- HOME -->
+    <section id="home">
+      <div class="home-info">
+        <h2>Olá, sou Lenny Lucena</h2>
+        <span class="home-position">Estudante de Programação FullStack</span>
+        <span class="home-resume">
+          Sou venezuelana, tenho 33 anos, moro en Londrina-PR-BR, sou formada em Logística,
+  actualmete estudando Programação Full Stark com a Toti. 
+        </span>
+        <button>
+          <a href="#contact">Contate-me</a>
+        </button>
+      </div>
+      <div class="home-img">
+        <img src="logo.jpg" alt="Foto de perfil">
+      </div>
+      <div class="redes">
+        <div class="instagram">
+            <a href="https://www.instagram.com/lucenalenny709/" target="_blank">
+                <img class="img_inst" src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" 
+                alt="instagram" width="40" height="40"> 
+            </a>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/profile.php?id=100007034988026" target="_blank">                                 
+                <img class="img_face" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" 
+                alt="facebook" width="40" height="40">
+            </a>    
+        </div>
+    </section>
+    
+    <!-- PROJECTS -->
+
+     <section id="projeto">
+      <h2>Projetos</h2>
+      <div class="card">
+          <a href="#">
+        <img src="practicando.jpg" class="card-img" alt="foto de meu projeto">
+        <div class="card-infor">
+          <span class="cerd_badge">Criando meu perfil com html, falando um pouco sobre mim</span>
+         </div>
+         </a>
+         <button>
+          <a href="https://github.com/LennyLucena7/Practicando" target="_blank">Clik aqui</a>
+         </button>
+        </div>
+     </section>
+      
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <h2>Contato</h2>
+        <form id="form"> 
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="nome" name="nome" id="input_nome" 
+                placeholder="Digite seu seu nome"
+                required>
+            </div>
+
+            
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="input_email" 
+                placeholder="Digite seu seu-email"
+                required>
+            </div>
+
+
+      <textarea cols="30" rows="10" input type="text" name="mensagem" 
+      id="input_mensagem" placeholder ="Digite sua mensagem"
+        required>
+      </textarea>
+
+      <button  id="btn_enviar" class="botao" type="enviar">Enviar</button>
+      <div id= 'Erros'></div>
+   
+    </form>
+  </section>
+  <footer>
+       2022 Lenny Lucena
+  </footer>
+  </main>  
+  </div>
+  <script src="java.js"></script>
 </body>
-</html>
+</html>   
