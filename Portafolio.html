@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="portafolio.css">
-  <title> Meu Portafolio</title>
+  <title>Portafolio</title>
 </head>
 <body>
   <main>
@@ -17,7 +17,7 @@
       <div class="menu">
         <nav class="nav-list">
             <a href="#home">Home</a>
-            <a href="#projects">Projeto</a>
+            <a href="#projects">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
       </div>
@@ -41,13 +41,13 @@
       </div>
       <div class="redes">
         <div class="instagram">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/lucenalenny709/" target="_blank">
                 <img class="img_inst" src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" 
                 alt="instagram" width="40" height="40"> 
             </a>
         </div>
         <div class="facebook">
-            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324053%7Ce%7Cfacebook%7C&placement=&creative=320269324053&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001637%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw77WVBhBuEiwAJ-YoJM8iG8zXeVR2d2bchSzWbU-KKjFVyPM9H_a0jj0frv9gDc4C8H7e2BoCJSwQAvD_BwE" target="_blank">                                 
+            <a href="https://www.facebook.com/profile.php?id=100007034988026" target="_blank">                                 
                 <img class="img_face" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" 
                 alt="facebook" width="40" height="40">
             </a>    
@@ -75,11 +75,32 @@
 
   <section id="contact">
     <h2>Contato</h2>
-    <form>
-      <input type="text" placeholder="Digite seu nome" />
-      <input type="email" placeholder="Digite seu e-mail" />
-      <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-      <button>Enviar</button>
+        <form id="form"> 
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="nome" name="nome" id="input_nome" 
+                placeholder="Digite seu seu nome"
+                required>
+            </div>
+
+            
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="input_email" 
+                placeholder="Digite seu seu-email"
+                required>
+            </div>
+
+
+      <textarea cols="30" rows="10" input type="text" name="mensagem" 
+      id="input_mensagem" placeholder ="Digite sua mensagem"
+        required>
+      </textarea>
+
+      <button  id="btn_enviar" class="botao" type="enviar">Enviar</button>
+      <div id= 'Erros'></div>
+   
     </form>
   </section>
   <footer>
@@ -87,5 +108,6 @@
   </footer>
   </main>  
   </div>
+  <script src="java.js"></script>
 </body>
 </html>   
